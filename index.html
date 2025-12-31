@@ -1,49 +1,392 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta charset="UTF-8">
-    <title>Indraneel Brahma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indraneel Brahma - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <img src="Resume-modified.png" alt="Profile Picture" width="300px">
-                <h1>Indraneel Brahma</h1>
-            </td> 
-        </tr>
-    </table>
-    <p><em>I am a student.Currently studing B.Tech on Computer Science And Engineering at <strong><a href="https://snuniv.ac.in/" target="_blank">Sister Nivedita University</a></strong></em></p>
-    <hr size="3">
-    <h3>Education</h3>
-    <ul>
-        <li>B.Tech(Computer Science And Engineering)</li>
-        <ul>
-            <li>(2019-2023)</li>
-            <li><a href="https://snuniv.ac.in/" target="_blank">Sister Nivedita University</a></li>
-        </ul>
-        <li>WBCHSE</li>
-        <ul>
-            <li>2019</li>
-            <li><a href="https://naktalahighschool.org/" target="_blank">Naktala High School</a></li>
-        </ul>
-    </ul>
-    <h3>Skills</h3>
-    <table cellspacing="5px">
-        <tr>
-            <td>C</td>
-            <td>👓👓👓👓</td>
-            <td>Python</td>
-            <td>👓👓👓👓</td>
-        </tr>
-        <tr>
-            <td>C++</td>
-            <td>👓👓👓👓</td>
-            <td>Django</td>
-            <td>👓👓👓👓🕶</td>
-        </tr>
-    </table>
-    <a href="contact.html">Contact Me</a>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo black-ops-one-regular">Xrekson</div>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list" id="navList">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#certification" class="nav-link">Certification</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span>
+                        <h1 class="hero-title heading-title">Indraneel Brahma</h1><h3 class="hero-subtitle heading-title black-ops-one-regular">[Xrekson]</h3>
+                    </span>
+                    <h2 class="hero-subtitle">Application Developer</h2>
+                    <p class="hero-bio">
+                        Passionate developer specializing in building scalable web applications with real-time capabilities. 
+                        Experienced in Angular, Spring Boot, and modern web technologies. Currently working at Mjunction Services 
+                        Limited, optimizing auction platforms and implementing real-time data streaming solutions.
+                    </p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>(+91) 8961071912</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span>indraneel1080brahma@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <span>Kolkata, India</span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <a href="#contact" class="cel-btn btn-primary">Hire Me</a>
+                        <a href="#" class="cel-btn btn-secondary" id="downloadCV">Download CV</a>
+                        <a href="#projects" class="cel-btn btn-accent">View Projects</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="avatar-container">
+                        <!-- Avatar placeholder - you can replace with your photo -->
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+                            <!-- <i class="fas fa-user" style="font-size: 5rem;"></i>
+                            <div style="margin-top: 20px; font-size: 1.5rem; font-weight: bold;">IB</div> -->
+                            <img src="assets/XR.png" alt="Image of Indraneel" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="cel-card">
+                <div class="education-item">
+                    <div class="edu-header">
+                        <h3 class="edu-title">Bachelor of Science in Computer Science and Engineering</h3>
+                        <div class="edu-date">Graduated: June 2023</div>
+                    </div>
+                    <div class="edu-details">
+                        <p><strong>Sister Nivedita University (SNU)</strong> – Kolkata, India</p>
+                        <p style="margin-top: 15px;"><strong>Relevant Coursework:</strong> Algorithms, Machine Learning, Software Engineering, Computer Systems, Databases</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" style="background: rgba(74, 111, 165, 0.05);">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="cel-card">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-title">Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-title">Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Angular</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">FastAPI</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-title">Tools & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">WebSocket</span>
+                            <span class="skill-tag">Maven</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="cel-card">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">July 2023 – Present</div>
+                        <h3 style="color: var(--primary-blue); font-size: 1.5rem;">Application Developer</h3>
+                        <p><strong>Mjunction Services Limited, Kolkata</strong></p>
+                        
+                        <div style="margin: 20px 0;">
+                            <div class="skill-tags">
+                                <span class="tech-tag">Angular</span>
+                                <span class="tech-tag">Java Spring Boot</span>
+                                <span class="tech-tag">ReactJS</span>
+                                <span class="tech-tag">Maven</span>
+                                <span class="tech-tag">JSP Servlet</span>
+                            </div>
+                        </div>
+                        
+                        <p><strong>Responsibilities:</strong> Worked on designing and deploying scalable and fault-tolerant web applications. Developed RESTful APIs for optimized communication. Ensured real-time updates and notifications using WebSocket.</p>
+                        
+                        <div class="achievement">
+                            <strong>Performance Optimization:</strong> Made the bidding process <strong>200% faster</strong> by optimizing Angular's change detection mechanism.
+                        </div>
+                        
+                        <div class="achievement">
+                            <strong>Scalability:</strong> Conducted over <strong>1500 auctions simultaneously</strong> on the platform, ensuring smooth performance.
+                        </div>
+                        
+                        <div class="achievement">
+                            <strong>Real-time Data Handling:</strong> Implemented a WebSocket-based communication layer for real-time data streaming, supporting <strong>2,000+ active connections</strong>; enhanced data delivery speeds by <strong>60%</strong> and optimized server resource utilization.
+                        </div>
+                        
+                        <div class="achievement">
+                            <strong>Visualization:</strong> Created multiple interactive dashboards using Highcharts and ApexCharts for enhanced platform clarity.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="background: rgba(255, 107, 107, 0.05);">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="cel-card project-card">
+                    <div class="card-header">AI-Powered Commodity Futures Analysis & Intelligence System</div>
+                    <div class="project-tech">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">PostgreSQL (pgvector)</span>
+                        <span class="tech-tag">mxbai-embed-large</span>
+                        <span class="tech-tag">DeepSeek-R1</span>
+                    </div>
+                    <ul class="project-features">
+                        <li>Vector similarity search for financial data analysis</li>
+                        <li>Real-time streaming responses with Server-Sent Events</li>
+                        <li>Automated embedding generation and storage</li>
+                        <li>Full CRUD operations with AI-powered querying</li>
+                    </ul>
+                    <div style="margin-top: 20px;">
+                        <a href="https://github.com/Xrekson/LLVMPY" target="_blank" class="cel-btn btn-primary">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="cel-card project-card">
+                    <div class="card-header">Vendeu: Real-Time Auction Platform</div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Angular 19</span>
+                        <span class="tech-tag">Spring Boot 3</span>
+                        <span class="tech-tag">TailwindCSS</span>
+                        <span class="tech-tag">NgRX Store</span>
+                    </div>
+                    <p><strong>Description:</strong> An auction platform with live updating data, implementing real-time WebSocket communication for live bidding and auction functionalities.</p>
+                    <p><strong>Architecture:</strong> Microservice architecture for scalable, maintainable modules.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="https://github.com/Xrekson/Vendeu" target="_blank" class="cel-btn btn-primary">Frontend</a>
+                        <a href="https://github.com/Xrekson/Auction" target="_blank" class="cel-btn btn-secondary">Backend</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section id="certification" class="section">
+        <div class="container">
+            <h2 class="section-title">Certification</h2>
+            <div class="cel-card" style="text-align: center;">
+                <div class="cert-badge">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div style="text-align: left;">
+                        <h3 style="color: var(--primary-blue);">Google Cybersecurity Professional Certificate</h3>
+                        <p>Issued by Google</p>
+                        <a href="#" class="cel-btn btn-accent" style="margin-top: 10px;">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background: rgba(255, 209, 102, 0.1);">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="cel-card">
+                <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.2rem; margin-bottom: 30px;">
+                        I'm always open to discussing new opportunities, interesting projects, or just chatting about technology!
+                    </p>
+                    
+                    <div class="contact-info" style="justify-content: center;">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>(+91) 8961071912</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span>indraneel1080brahma@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 40px;">
+                        <a href="mailto:indraneel1080brahma@gmail.com" class="cel-btn btn-primary" style="font-size: 1.1rem; padding: 15px 30px;">
+                            <i class="fas fa-paper-plane" style="margin-right: 10px;"></i> Send Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo" style="margin-bottom: 20px;">Indra<span class="logo-highlight">NEEL</span></div>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Indraneel Brahma. All rights reserved.</p>
+                <p style="margin-top: 10px; opacity: 0.8;">This portfolio is built with cel-shaded CSS design</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                
+                this.classList.add('active');
+                
+                document.querySelector('.nav').classList.remove('active');
+                
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        document.getElementById('downloadCV').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('assets/Resume.pdf', '_blank');
+        });
+        
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        document.querySelectorAll('.cel-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.boxShadow = '0 10px 0 rgba(0, 0, 0, 0.2)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.boxShadow = 'none';
+            });
+        });
+    </script>
 </body>
 </html>
