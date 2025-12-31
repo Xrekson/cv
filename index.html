@@ -302,16 +302,16 @@
             <div class="logo" style="margin-bottom: 20px;">Indra<span class="logo-highlight">NEEL</span></div>
             
             <div class="social-links">
-                <a href="#" class="social-icon">
+                <a href="https://github.com/Xrekson" target="_blank" class="social-icon">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="#" class="social-icon">
+                <a href="https://www.linkedin.com/in/xrekson/" target="_blank" class="social-icon">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" class="social-icon">
+                <a href="https://x.com/BrahmaIndraneel" target="_blank" class="social-icon">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#" class="social-icon">
+                <a href="#" class="social-icon" id="downloadCVicon">
                     <i class="fas fa-file-pdf"></i>
                 </a>
             </div>
@@ -350,6 +350,10 @@
         });
         
         document.getElementById('downloadCV').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('assets/Resume.pdf', '_blank');
+        });
+        document.getElementById('downloadCVicon').addEventListener('click', function(e) {
             e.preventDefault();
             window.open('assets/Resume.pdf', '_blank');
         });
